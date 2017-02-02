@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1 Image Search Abstraction Layer
+	blockquote
+		p User stories: 
+		ul
+			li I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+			li I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+			li I can get a list of the most recently submitted search strings.
+	h3 Example creation usage: 
+	code https://a-img-srch.herokuapp.com/search/funnycats	 
+	code https://a-img-srch.herokuapp.com/search/funnycats?offset=2
+	code https://a-img-srch.herokuapp.com/latest/	 
+
+	h3 Example output
+	pre
+		code {"data": [{"id": "RXdKu","title": "Very Cool funny dog","description": null,"datetime": 1480821822,"cover": "C9yGORk","cover_width": 2560,"cover_height": 1600, "account_url": "imranrocky", "account_id": 46175674, "privacy": "public", "layout": "blog", "views": 656, "link": "http://imgur.com/a/RXdKu", "ups": 13, "downs": 1, "points": 12, "score": 12, "is_album": true, "vote": null, "favorite": false, "nsfw": false, "section": "", "comment_count": 1, "topic": "No Topic", "topic_id": 29, "images_count": 1, "in_gallery": true, "is_ad": false, "tags": [] }] }
